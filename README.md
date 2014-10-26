@@ -1,3 +1,7 @@
+###run_analysis.R
+
+##Steps
+
 The script performs the following steps:
 
 1)Check and create a new working directory
