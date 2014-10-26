@@ -1,6 +1,6 @@
-###run_analysis.R
+##run_analysis.R
 
-##Steps
+###Steps
 
 The script performs the following steps:
 
