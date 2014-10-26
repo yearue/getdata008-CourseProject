@@ -44,7 +44,6 @@ trainData1<-trainData[,meanstd]
 testDataMerge<-cbind(testDataAct,testDataSub,testData1)
 trainDataMerge<-cbind(trainDataAct,trainDataSub,trainData1)
 allDataMerge<-rbind(testDataMerge,trainDataMerge)
-write.table(allDataMerge, file="tidy1.txt",sep=",",row.names = FALSE)
 
 #Calculate mean by Activity and Subject
 tidy2 = aggregate(allDataMerge[,3:66], by=list(activity=allDataMerge$Activity, subject=allDataMerge$Subject), FUN=mean, na.action=na.omit)
